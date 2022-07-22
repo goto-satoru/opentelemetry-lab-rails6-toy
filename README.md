@@ -1,24 +1,25 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+# Rails 'Toy' appplication tracing with OpenTelemetry
 
 * Ruby 2.7.6
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+- Rails 6
+- Docker 
+- Yarn
 
-* Database creation
+## Deployment
 
-* Database initialization
+- docker-compose up
+- bundle install
+- rails db:migrate
+- rails webpacker:install
+- rails server
 
-* How to run the test suite
+# Jaeger UI
 
-* Services (job queues, cache servers, search engines, etc.)
+- [htttp://localhost:16686](htttp://localhost:16686)
 
-* Deployment instructions
+# Zipkin 
 
-* ...
+- [htttp://localhost:9411](htttp://localhost:9411)
