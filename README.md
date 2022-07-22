@@ -18,8 +18,8 @@
 
 # Jaeger UI
 
-- [htttp://localhost:16686](htttp://localhost:16686)
+- [http://localhost:16686](http://localhost:16686)
 
 # Zipkin 
 
-- [htttp://localhost:9411](htttp://localhost:9411)
+- [http://localhost:9411](http://localhost:9411)
