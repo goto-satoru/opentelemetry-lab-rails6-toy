@@ -1,6 +1,4 @@
-# Rails 'Toy' appplication tracing with OpenTelemetry
-
-* Ruby 2.7.6
+# tracing Rails 'Toy' tutorial appplication with OpenTelemetry
 
 ## Prerequisites
 
