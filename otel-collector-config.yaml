@@ -1,4 +1,3 @@
-# Inspired by https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/examples/demo
 receivers:
   otlp:
     protocols:
@@ -16,13 +15,19 @@ exporters:
     insecure: true
 
 processors:
+  resource:
+    attributes:
+      - key: service.name
+        action: upsert
+        value: "OpenTelemetry-Ruby"
+
   batch:
 
 service:
   pipelines:
     traces:
       receivers: [otlp]
-      processors: [batch]
+      processors: [resource, batch]
       exporters: [logging, zipkin, jaeger]
     metrics:
       receivers: [otlp]
